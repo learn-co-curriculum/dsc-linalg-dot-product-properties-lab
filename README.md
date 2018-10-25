@@ -1,0 +1,1 @@
+# dsc-2-13-09-linalg-dot-product-properties
