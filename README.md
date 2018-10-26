@@ -5,9 +5,9 @@
 
 In this lab we shall look at some interesting properties of a Dot product type matrix multiplication. Understanding these properties will become useful as we move forward with machine learning advanced linear algebra. The lab will require you to calculate results to provide a proof for these properties.
 
-## Objectives:
+## Objectives
 You will be able to:
-* Understand and analytically explain Distributive, Commutative and Associative properties of dot product. 
+* Understand and analytically explain Distributive, Commutative and Associative properties of dot product
 
 ## Instructions
 
