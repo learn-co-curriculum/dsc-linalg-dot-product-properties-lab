@@ -93,7 +93,7 @@ left == right
 
 
 ## Commutative Property -  vector multiplication IS commutative
-### Prove that for vectors, x<sup>T</sup> . y = y<sup>T</sup> . x
+### Prove that for vectors,  $x^T \cdot y = y^T \cdot x$
 Note: superscipt<sup>T</sup> denotes the transpose we saw earlier
 
 
