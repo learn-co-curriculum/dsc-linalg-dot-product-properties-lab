@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In this lab we shall look at some interesting properties of a Dot product type matrix multiplication. Understanding these properties will become useful as we move forward with machine learning advanced linear algebra. The lab will require you to calculate results to provide a proof for these properties.
+In this lab, you'll be practicing some interesting properties of a Dot Product-type matrix multiplication. Understanding these properties will become useful as you move forward with machine learning. The lab will require you to calculate results to provide a proof for these properties.
 
 ## Objectives
 You will be able to:
@@ -15,24 +15,25 @@ You will be able to:
 * Ensure that size/dimension assumptions are met while performing calculations (you'll see errors otherwise)
 * Calculate the LHS and RHS for all equations and show if they are equal or not
 
-## Distributive Property - Matrices multiplication is distributive
-### Prove that A.(B+C)=A.B+A.C
+## Distributive Property - matrix multiplication is distributive
+
+### Prove that $A \cdot (B+C) = (A \cdot B + A \cdot C) $
 
 
 ```python
 # Your code here
 ```
 
-## Associative Property - Matrices multiplication is associative
-### Prove that A.(B.C)=(A.B).C
+## Associative Property - matrix multiplication is associative
+### Prove that $A \cdot (B \cdot C) = (A \cdot B) \cdot C $
 
 
 ```python
 # Your code here 
 ```
 
-## Commutative Property - Matrix multiplication is NOT commutative
-### Prove that for matrices, A.B ≠ B.A
+## Commutative Property - matrix multiplication is NOT commutative
+### Prove that for matrices, $A \cdot B \neq B \cdot A $
 
 
 ```python
@@ -48,9 +49,8 @@ Note: superscipt<sup>T</sup> denotes the transpose we saw earlier
 # Your code here 
 ```
 
-#### and finally 
 ## Simplification of the matrix product
-### Prove that  (A.B)<sup>T</sup> = B<sup>T</sup> . A<sup>T</sup>
+### Prove that $ (A \cdot B)^T = A^T \cdot B^T $
 
 
 ```python
@@ -59,4 +59,4 @@ Note: superscipt<sup>T</sup> denotes the transpose we saw earlier
 
 ## Summary 
 
-So now we have seen enough matrix algebra to help us solve a problem of linear equations as we saw earlier in this section. We shall see how to do this next. 
+You've seen enough matrix algebra by now to solve a problem of linear equations as you saw earlier. You'll now see how to do this next. 
