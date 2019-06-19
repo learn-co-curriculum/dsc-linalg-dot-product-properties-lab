@@ -114,12 +114,12 @@ left == right
 
 
 ## Simplification of the matrix product
-### Prove that $ (A \cdot B)^T = A^T \cdot B^T $
+### Prove that $ (A \cdot B)^T = B^T \cdot A^T $
 
 
 ```python
-A = np.array([[2, 3], [1, 4], [7, 6]])
-B = np.array([[5, 3], [2, 2]])
+A = np.array([[2, 13], [1, 4], [72, 6], [18, 12], [27,5]])
+B = np.array([[5, 30], [22, 2]])
 
 left = np.transpose(A.dot(B))
 right = np.transpose(B).dot(np.transpose(A))
@@ -129,8 +129,8 @@ left == right
 
 
 
-    array([[ True,  True,  True],
-           [ True,  True,  True]])
+    array([[ True,  True,  True,  True,  True],
+           [ True,  True,  True,  True,  True]])
 
 
 
