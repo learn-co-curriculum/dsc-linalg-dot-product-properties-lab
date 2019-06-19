@@ -50,7 +50,7 @@ Note: superscipt<sup>T</sup> denotes the transpose we saw earlier
 ```
 
 ## Simplification of the matrix product
-### Prove that $ (A \cdot B)^T = A^T \cdot B^T $
+### Prove that $ (A \cdot B)^T = B^T \cdot A^T $
 
 
 ```python
