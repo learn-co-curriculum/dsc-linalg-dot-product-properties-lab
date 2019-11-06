@@ -3,19 +3,24 @@
 
 ## Introduction
 
-In this lab, you'll be practicing some interesting properties of a Dot Product-type matrix multiplication. Understanding these properties will become useful as you move forward with machine learning. The lab will require you to calculate results to provide a proof for these properties.
+In this lab, you'll be practicing some interesting properties of a dot product-type matrix multiplication. Understanding these properties will become useful as you study machine learning. The lab will require you to calculate results to provide a proof for these properties.
 
 ## Objectives
-You will be able to:
-* Understand and analytically explain Distributive, Commutative and Associative properties of dot product
+
+In this lab you will: 
+
+- Demonstrate the distributive, commutative, and associative property of dot products 
+- Use the transpose method to transpose Numpy matrices 
+- Compute the dot product for matrices and vectors 
+
 
 ## Instructions
 
-* For each property, create suitably sized matrices with random data and prove the equations 
+* For each property, create suitably sized matrices with random data to prove the equations 
 * Ensure that size/dimension assumptions are met while performing calculations (you'll see errors otherwise)
 * Calculate the LHS and RHS for all equations and show if they are equal or not
 
-## Distributive Property - matrix multiplication is distributive
+## Distributive Property - matrix multiplication IS distributive
 
 ### Prove that $A \cdot (B+C) = (A \cdot B + A \cdot C) $
 
@@ -26,18 +31,13 @@ A = np.array([[2, 3], [1, 4], [7, 6]])
 B = np.array([[5], [2]])
 C = np.array([[4], [3]])
 
-left = A.dot(B+C)
+left = A.dot(B + C)
 right = A.dot(B) + A.dot(C)
 
 print (left == right)
 ```
 
-    [[ True]
-     [ True]
-     [ True]]
-
-
-## Associative Property - matrix multiplication is associative
+## Associative Property - matrix multiplication IS associative
 ### Prove that $A \cdot (B \cdot C) = (A \cdot B) \cdot C $
 
 
@@ -52,15 +52,6 @@ right = (A.dot(B)).dot(C)
 left == right
 ```
 
-
-
-
-    array([[ True],
-           [ True],
-           [ True]])
-
-
-
 ## Commutative Property - matrix multiplication is NOT commutative
 ### Prove that for matrices, $A \cdot B \neq B \cdot A $
 
@@ -72,25 +63,11 @@ B = np.array([[5, 3], [2, 2]])
 left = A.dot(B)
 right = B.dot(A)
 
-print (left)
+print(left)
 print(right)
 
 left == right
 ```
-
-    [[16 12]
-     [40 28]]
-    [[28 30]
-     [16 16]]
-
-
-
-
-
-    array([[False, False],
-           [False, False]])
-
-
 
 ## Commutative Property -  vector multiplication IS commutative
 ### Prove that for vectors,  $x^T \cdot y = y^T \cdot x$
@@ -106,13 +83,6 @@ right = np.transpose(y).dot(x)
 left == right
 ```
 
-
-
-
-    array([[ True]])
-
-
-
 ## Simplification of the matrix product
 ### Prove that $ (A \cdot B)^T = B^T \cdot A^T $
 
@@ -125,14 +95,6 @@ left = np.transpose(A.dot(B))
 right = np.transpose(B).dot(np.transpose(A))
 left == right
 ```
-
-
-
-
-    array([[ True,  True,  True,  True,  True],
-           [ True,  True,  True,  True,  True]])
-
-
 
 ## Summary 
 
